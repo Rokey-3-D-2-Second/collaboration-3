@@ -19,7 +19,7 @@ def generate_launch_description():
         ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "level_crossing"}),
         # ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "tunnel"}),
         ("turtlebot3_autorace_detect", "detect_traffic_light.launch.py", {}),
-        # ("turtlebot3_autorace_detect", "detect_level_crossing.launch.py", {}),
+        ("turtlebot3_autorace_detect", "detect_level_crossing.launch.py", {}),
         # ("turtlebot3_autorace_mission", "mission_construction.launch.py", {}),
         # ('turtlebot3_autorace_mission', 'mission_tunnel.launch.py', {}),
         # ('turtlebot3_autorace_mission', 'control_lane.launch.py', {}),
