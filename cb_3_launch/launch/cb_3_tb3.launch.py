@@ -15,11 +15,11 @@ def generate_launch_description():
         ("turtlebot3_autorace_detect", "detect_lane.launch.py", {}),
         ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "intersection"}),
         ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "construction"}),
-        ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "parking"}),
+        # ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "parking"}),
         ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "level_crossing"}),
         # ("turtlebot3_autorace_detect", "detect_sign.launch.py", {"mission": "tunnel"}),
         ("turtlebot3_autorace_detect", "detect_traffic_light.launch.py", {}),
-        ("turtlebot3_autorace_detect", "detect_level_crossing.launch.py", {}),
+        # ("turtlebot3_autorace_detect", "detect_level_crossing.launch.py", {}),
         # ("turtlebot3_autorace_mission", "mission_construction.launch.py", {}),
         # ('turtlebot3_autorace_mission', 'mission_tunnel.launch.py', {}),
         # ('turtlebot3_autorace_mission', 'control_lane.launch.py', {}),
@@ -36,9 +36,10 @@ def generate_launch_description():
         )
 
     # teleop_keyboard 노드 실행 추가
-    teleop = ExecuteProcess(
-        cmd=['ros2', 'run', 'turtlebot3_teleop', 'teleop_keyboard'],
-        output='screen'
-    )
+    # teleop = ExecuteProcess(
+    #     cmd=['ros2', 'run', 'turtlebot3_teleop', 'teleop_keyboard'],
+    #     output='screen'
+    # )
 
-    return LaunchDescription(includes + [teleop])
+    # return LaunchDescription(includes + [teleop])
+    return LaunchDescription(includes)
