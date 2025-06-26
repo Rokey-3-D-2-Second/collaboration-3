@@ -22,7 +22,7 @@ def generate_launch_description():
         ("turtlebot3_autorace_detect", "detect_level_crossing.launch.py", {}),  # level_crossing
         # ("turtlebot3_autorace_mission", "mission_construction.launch.py", {}),
         # ('turtlebot3_autorace_mission', 'mission_tunnel.launch.py', {}),
-        # ('turtlebot3_autorace_mission', 'control_lane.launch.py', {}),
+        ('turtlebot3_autorace_mission', 'control_lane.launch.py', {}),
     ]
 
     includes = []
@@ -40,6 +40,12 @@ def generate_launch_description():
     #     cmd=['ros2', 'run', 'turtlebot3_teleop', 'teleop_keyboard'],
     #     output='screen'
     # )
+    
+    # follower 노드 실행 추가
+    follower = ExecuteProcess(
+        cmd=['ros2', 'run', 'turtlebot3_autorace_mission', 'tb3_follower'],
+        output='screen'
+    )
 
-    # return LaunchDescription(includes + [teleop])
-    return LaunchDescription(includes)
+    return LaunchDescription(includes + [follower])
+    # return LaunchDescription(includes)
