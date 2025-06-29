@@ -87,3 +87,5 @@
 ### 참고자료
 
 - https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
+- https://github.com/Rokey-3-D-2-Second/turtlebot3_autorace/tree/humble
+- https://github.com/Rokey-3-D-2-Second/turtlebot3_simulations/tree/humble
