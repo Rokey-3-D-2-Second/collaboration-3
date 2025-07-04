@@ -105,13 +105,11 @@
 
 ## 시연 영상
 
-- 영상 링크: [주행]()
-- 영상 링크: [Pick & Place]()
+- 영상 링크: [Demo Video](https://youtu.be/scLdyGJXrE8)
 
 <div align="center">
 
-[주행]()
-[Pick & Place]()
+[Demo Video](https://github.com/user-attachments/assets/fcc3915f-7e03-40fe-9db0-ac256dae2819)
 
 </div>
 
@@ -119,8 +117,8 @@
 
 <div align="center">
 
-![협동-3 2주차 FSM]()
-![협동-3 2주차 Flowchart]()
+![협동-3 2주차 FSMdrawio](https://github.com/user-attachments/assets/14da158e-594f-44cc-a9e8-cef59bc26276)
+![협동-3 2주차 Flowchartdrawio](https://github.com/user-attachments/assets/5d751ad9-888a-445c-ba2e-1892dfa8e356)
 
 </div>
 
